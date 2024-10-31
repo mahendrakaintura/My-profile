@@ -1,0 +1,42 @@
+abstract class vehicle{
+    void start(){
+        System.out.println("starting");
+    }
+    abstract void speed ();
+}
+interface Boost{
+    void boost();
+}
+class car extends vehicle{
+    
+    void start(){
+        System.out.println("car is starting");
+    }
+    
+    void speed(){
+        System.out.println("speed is 5");
+    }
+}
+class supercar extends vehicle implements Boost{
+    
+    public
+     void boost(){
+        System.out.println("boost on");
+    }
+    @Override
+    void speed(){
+        System.out.println("lambo speed is 10");
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        vehicle mycar = new car();
+        mycar.start();
+        mycar.speed();
+        vehicle lambo = new supercar();
+        lambo.speed();
+        if (lambo instanceof Boost){
+            ((Boost)lambo).boost();
+        }
+    }
+}

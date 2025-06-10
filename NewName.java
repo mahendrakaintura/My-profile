@@ -1,8 +1,8 @@
-public class Main1508{
+public class NewName{
   public static void main(String[] args) {
     int s = 50;
     double h = 165.8;
-    String n = "NƒŸƒ¨ƒŸƒ«ƒ­";
+    String n = "N";
 
     System.out.printf("name: %s, score: %d, height: %f \n", n, s, h);
     System.out.printf("name: %-10s, score: %10d, height: %5.2f \n", n, s, h);

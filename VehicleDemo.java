@@ -28,7 +28,7 @@ class supercar extends vehicle implements Boost{
         System.out.println("lambo speed is 10");
     }
 }
-public class Main{
+public class VehicleDemo{
     public static void main(String[] args){
         vehicle mycar = new car();
         mycar.start();
